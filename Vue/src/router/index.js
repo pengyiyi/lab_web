@@ -43,59 +43,51 @@ export default new Router({
     {
       path: '/intro',
       component:IntroIndex,
-      children:[{ path: '/', component: Intro },
-                { path: '/leaders', component:Leaders },
-                { path: '/enviro', component: Enviro}
-              ]
-    },
-    {
-      path: '/intro',
-      component:IntroIndex,
-      children:[{ path: '/', component: Intro },
-                { path: '/leaders', component:Leaders },
-                { path: '/enviro', component: Enviro}
+      children:[{ path: '', component: Intro },
+                { path: 'leaders', component:Leaders },
+                { path: 'enviro', component: Enviro}
               ]
     },
     {
       path: '/labs',
       component:labsIndex,
-      children:[{ path: '/', component: labsIndex },
-                { path: '/yun', component:Yun },
-                { path: '/domains', component:Yuming},
-                { path: '/virtual', component:Xuni},
-                { path: '/attack', component:Gongfang}
+      children:[{ path: '', component: labsIndex },
+                { path: 'yun', component:Yun },
+                { path: 'domains', component:Yuming},
+                { path: 'virtual', component:Xuni},
+                { path: 'attack', component:Gongfang}
               ]
     },
     {
       path: '/teachers',
-      children:[{ path: '/', component: Teachers },
-                { path: '/details', component:TeaDetails },
+      children:[{ path: '', component: Teachers },
+                { path: 'details', component:TeaDetails },
               ]
     },
     {
       path: '/projects',
       component:ProIndex,
-      children:[{ path: '/', component: Projects },
-                { path: '/insearch', component:Insearch },
-                {path:'/cooperate',component:Copor}
+      children:[{ path: '', component: Projects },
+                { path: 'insearch', component:Insearch },
+                {path:'cooperate',component:Copor}
               ]
     },
     {
       path:'/activities',
       component:ActIndex,
-      children:[{path:'/',component:Happy},
-                {path:'/daily',component:Daily},
-                {path:'/competition',Compete}
+      children:[{path:'',component:Happy},
+                {path:'daily',component:Daily},
+                {path:'competition',Compete}
 
       ]
     },
     {
       path:'/news',
       component:NewsIndex,
-      children:[{path:'/',component:News},
-                {path:'/notice',component:Notice},
-                {path:'/details',component:NewsDetails},
-                {path:'/noticedetails',component:NoticeDetails}
+      children:[{path:'',component:News},
+                {path:'notice',component:Notice},
+                {path:'details',component:NewsDetails},
+                {path:'noticedetails',component:NoticeDetails}
                ]
     }
   ]

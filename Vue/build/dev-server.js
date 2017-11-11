@@ -65,7 +65,10 @@ app.use(devMiddleware)
 // serve pure static assets
 const staticPath = path.posix.join(config.dev.assetsPublicPath, config.dev.assetsSubDirectory)
 app.use(staticPath, express.static('./static'))
+//防止理解为url，此处设定为绑定的文件信息
+app.use('/mock',express.static('./mock'))
 
+app.use('./assets',express.static('./assetes'))
 const uri = 'http://localhost:' + port
 
 var _resolve
