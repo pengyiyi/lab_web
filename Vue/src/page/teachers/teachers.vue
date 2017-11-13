@@ -1,7 +1,6 @@
 <template>
   <div>
-     <!--首页-->
-    教师概览
+  显示老师
   </div>
 </template>
 

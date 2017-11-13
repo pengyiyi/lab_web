@@ -1,12 +1,5 @@
 <template>
   <div>
-     <!--首页-->
-     首页
+    <p>这是首页</p>
   </div>
 </template>
-
-<script>
-</script>
-
-<style>
-</style>

@@ -68,7 +68,7 @@ app.use(staticPath, express.static('./static'))
 //防止理解为url，此处设定为绑定的文件信息
 app.use('/mock',express.static('./mock'))
 
-app.use('./assets',express.static('./assetes'))
+
 const uri = 'http://localhost:' + port
 
 var _resolve

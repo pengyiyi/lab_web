@@ -22,7 +22,7 @@ import Insearch from '@/page/projects/insearch.vue'
 import Projects from '@/page/projects/projects.vue'
 
 import ActIndex from '@/components/ActIndex.vue'
-import Compete from '@/page/activity/Compete.vue'
+import Competition from '@/page/activity/competition.vue'
 import Daily from '@/page/activity/daily.vue'
 import Happy from '@/page/activity/Happy.vue'
 
@@ -43,7 +43,7 @@ export default new Router({
     {
       path: '/intro',
       component:IntroIndex,
-      children:[{ path: '', component: Intro },
+      children:[{ path:'', component: Intro},
                 { path: 'leaders', component:Leaders },
                 { path: 'enviro', component: Enviro}
               ]
@@ -51,16 +51,17 @@ export default new Router({
     {
       path: '/labs',
       component:labsIndex,
-      children:[{ path: '', component: labsIndex },
+      children:[
                 { path: 'yun', component:Yun },
                 { path: 'domains', component:Yuming},
                 { path: 'virtual', component:Xuni},
-                { path: 'attack', component:Gongfang}
+                { path: '', component:Gongfang}
               ]
     },
     {
       path: '/teachers',
-      children:[{ path: '', component: Teachers },
+      component:Teachers,
+      children:[
                 { path: 'details', component:TeaDetails },
               ]
     },
@@ -77,7 +78,7 @@ export default new Router({
       component:ActIndex,
       children:[{path:'',component:Happy},
                 {path:'daily',component:Daily},
-                {path:'competition',Compete}
+                {path:'competition',component:Competition}
 
       ]
     },
